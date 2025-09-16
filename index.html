@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Abdulhadi Alzahrani — Personal Site</title>
+    <meta name="description" content="Personal website of Abdulhadi Alzahrani — Web Development student." />
+    <meta property="og:title" content="Abdulhadi Alzahrani — Personal Site" />
+    <meta property="og:description" content="Web Development & Programming student at the Technical College." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="%237c3aed"/><stop offset="1" stop-color="%2322d3ee"/></linearGradient></defs><circle cx="32" cy="32" r="28" fill="url(%23g)"/></svg>' />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Abdulhadi</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero__content" data-reveal>
+          <h1 id="intro-title">Hi, I’m <span class="accent">Abdulhadi Alzahrani</span></h1>
+          <p class="subtitle">21 years old,  Web Development & Programming student at the Technical College.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="#about">Learn more</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orb orb--one" data-orb></div>
+          <div class="orb orb--two" data-orb></div>
+          <div class="grid-bg"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2>About me</h2>
+            <p class="muted">Curious, disciplined, and passionate about building for the web.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card" data-reveal>
+              <h3>Profile</h3>
+              <ul class="list">
+                <li><strong>Name:</strong> Abdulhadi Alzahrani</li>
+                <li><strong>Age:</strong> 21</li>
+                <li><strong>Focus:</strong> Programming & Web Development</li>
+              </ul>
+            </article>
+            <article class="card" data-reveal>
+              <h3>What I enjoy</h3>
+              <p>
+                Clean UI, performant frontends, and learning modern tools. I like turning ideas into
+                accessible, responsive experiences.
+              </p>
+            </article>
+            <article class="card" data-reveal>
+              <h3>Skills snapshot</h3>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Git</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section alt">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2>Education</h2>
+            <p class="muted">A hands-on technical background with a focus on the future.</p>
+          </div>
+          <div class="timeline" data-reveal>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Technical College</h3>
+                <p>Majoring in Programming & Web Development</p>
+                <span class="badge">Student</span>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>High School</h3>
+                <p>Graduated from General Secondary School</p>
+                <span class="badge">Graduate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2>Contact</h2>
+            <p class="muted">Feel free to reach out via phone or email.</p>
+          </div>
+          <div class="contact" data-reveal>
+            <a class="contact__item" href="tel:+966550594369" aria-label="Call Abdulhadi">
+              <span class="contact__icon">📞</span>
+              <span>+966 55 059 4369</span>
+            </a>
+            <a class="contact__item" href="mailto:realbern14@gmail.com" aria-label="Email Abdulhadi">
+              <span class="contact__icon">✉️</span>
+              <span>realbern14@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Abdulhadi Alzahrani. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
